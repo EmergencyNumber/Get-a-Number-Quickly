@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://e7.pngegg.com/pngimages/203/871/png-clipart-emergency-service-24-7-service-plumber-24x7-emergency-service-24-7-service.png" sizes="16x16">
+ 
+    <title>Get a Number Quickly</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            overflow: hidden;
+            font-family: 'Courier New', Courier, monospace;
+            color: #00ff00;
+            position: relative;
+        }
+
+        .container {
+            text-align: center;
+            z-index: 1;
+        }
+
+        /* Hacking text animation */
+        .hacking-text {
+            font-size: 50px;
+            font-weight: bold;
+            animation: glitch 2s infinite alternate-reverse;
+        }
+
+        @keyframes glitch {
+            0% {
+                text-shadow: 2px 2px 5px rgba(0, 255, 0, 0.6), -2px -2px 5px rgba(0, 255, 0, 0.6);
+                transform: rotate(2deg);
+            }
+            25% {
+                text-shadow: -3px -3px 10px rgba(0, 255, 0, 0.8), 3px 3px 10px rgba(0, 255, 0, 0.8);
+                transform: rotate(-3deg);
+            }
+            50% {
+                text-shadow: 4px 4px 10px rgba(0, 255, 0, 0.9), -4px -4px 10px rgba(0, 255, 0, 0.9);
+                transform: rotate(5deg);
+            }
+            75% {
+                text-shadow: -6px -6px 15px rgba(0, 255, 0, 1), 6px 6px 15px rgba(0, 255, 0, 1);
+                transform: rotate(-6deg);
+            }
+            100% {
+                text-shadow: 2px 2px 5px rgba(0, 255, 0, 0.6), -2px -2px 5px rgba(0, 255, 0, 0.6);
+                transform: rotate(2deg);
+            }
+        }
+
+        /* Glitchy background */
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(0, 255, 0, 0.7), rgba(0, 0, 0, 0.8));
+            animation: glitchBackground 0.5s linear infinite;
+            z-index: -1;
+        }
+
+        @keyframes glitchBackground {
+            0% { background-position: 100% 100%; }
+            50% { background-position: -100% -100%; }
+            100% { background-position: 100% 100%; }
+        }
+
+        /* System confirmation steps */
+        .confirmation-steps {
+            font-size: 40px;
+            margin-top: 40px;
+            color: #00ff00;
+            white-space: nowrap;
+        }
+
+        .step {
+            margin-top: 20px;
+            font-size: 30px;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        .step span {
+            font-weight: bold;
+            animation: typingEffect 3s steps(30) infinite;
+            overflow: hidden;
+            display: inline-block;
+            width: 0;
+        }
+
+        /* Infinite typing effect for system confirmation */
+        @keyframes typingEffect {
+            0% { width: 0; }
+            100% { width: 100%; }
+        }
+
+        /* Exit button */
+        .exit-button {
+            font-size: 32px;
+            padding: 20px 50px;
+            border: 3px solid #00ff00;
+            background: transparent;
+            color: #00ff00;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 30px;
+            transition: 0.3s all ease-in-out;
+            text-decoration: none;
+        }
+
+        /* Button hover effect */
+        .exit-button:hover {
+            background-color: #00ff00;
+            color: black;
+            transform: scale(1.1);
+            box-shadow: 0 0 10px 2px #00ff00;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="hacking-text">Thank You For Visiting...</div>
+
+        <!-- System confirmation steps -->
+        <div class="confirmation-steps">
+            <div class="step"><span>1. Accept System Use...</span></div>
+            <div class="step"><span>2. Location Tracking Confirmation...</span></div>
+            <div class="step"><span>3. Emergency Number Confirmation...</span></div>
+            <div class="step"><span>4. Face ID Confirmation...</span></div>
+        </div>
+<br>
+<br>
+        <!-- Exit button -->
+        <a href="javascript:void(0);" class="exit-button" onclick="window.close();">Now You Can Exit the Page</a>
+    </div>
+
+    <!-- Background Animation -->
+    <div class="background"></div>
+
+    <script>
+        // Show the confirmation message after 8 seconds as an alert
+        setTimeout(function() {
+            alert("Don't worry, this is not hacking your data. This is just a confirmation for your visit profile only. From here, your data can't be hacked. Only this page view profile will be shown.");
+        }, 1000); // 8 seconds delay
+    </script>
+<script>
+    document.addEventListener("contextmenu", (event) => {
+      event.preventDefault();
+    });
+  </script>
+</body>
+</html>

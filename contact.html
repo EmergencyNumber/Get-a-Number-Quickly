@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="https://e7.pngegg.com/pngimages/203/871/png-clipart-emergency-service-24-7-service-plumber-24x7-emergency-service-24-7-service.png" sizes="16x16">
+  <title>Get a Number Quickly</title>
+  <style>
+
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      color: #616161;
+ 
+    }
+    nav {
+      background: linear-gradient(135deg, #00bcd4, #ff4081); /* Multi-color Gradient */
+      padding: 20px;
+      width: 25cm;
+      height: 3cm;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      text-decoration: none;
+      margin: 0 20px;
+    }
+
+    nav a:hover {
+      color: #ffea00;
+    }
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #ff04c9, #e9ff23);
+      text-align: center;
+      padding: 50px 20px;
+      width: 25cm;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 22px;
+      margin-top: 20px;
+    }
+
+    marquee {
+      color: #ff0000;
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: oblique;
+      font-weight: bolder;
+      font-size: 50px;
+    }
+
+    /* Content Section */
+    .container {
+     width: 20cm;
+      margin-left: 2cm;
+      padding: 50px;
+      background: #fff;
+      border-radius: 30px;
+      box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
+    }
+    .container:hover{
+ 
+    width: 20cm;
+      padding: 50px;
+      
+      margin-left: 2cm;
+      background: #d60aff;
+      color: #f82500;
+      border-radius: 10px;
+      box-shadow: 0 14px 8px rgba(0, 110, 255, 0.822);
+    }
+    h1 {
+      text-align: center;
+    width: 15cm;
+      color: #444;
+    }
+
+    input[type="text"] {
+      width: 18cm;
+     
+      padding: 50px;
+      margin: 30px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 22px;
+    }
+
+    button {
+      padding: 45px 60px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+
+    button:hover {
+      background-color: #027cff;
+    }
+
+    /* Message Box Style */
+    .message-box {
+      margin-top: 30px;
+      padding: 30px;
+      border-radius: 5px;
+      background: #f1f1f1;
+      font-size: 28px;
+      color: #333;
+    }
+
+    .message-box span {
+      font-weight: bold;
+      color: #007bff;
+    }
+
+    .highlight-number {
+      font-weight: bold;
+      color: red;
+    }
+
+    /* Emergency Button */
+    .emergency-btn {
+      position: static;
+      width: 10cm;
+    
+      top: 600px;
+      height: 2cm;
+      right: 20%;
+      padding: 15px 30px;
+      background-color: #7700ff;
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 30px 30px rgb(2, 2, 2);
+    position: absolute;
+    }
+
+    .emergency-btn:hover {
+      background-color: #c9302c;
+      color: #f4f4f9;
+      font-size: xx-large;
+      box-shadow: 0 30px 30px rgb(255, 2, 179);
+    }
+
+    /* Animation for red and blue blinking */
+    @keyframes blinkRedBlue {
+      0% {
+        background-color: red;
+      }
+      50% {
+        background-color: blue;
+      }
+      100% {
+        background-color: red;
+      }
+    }
+
+    .emergency-active {
+      animation: blinkRedBlue 1s infinite;
+    }
+    .services{
+    margin-left: 20px;
+      margin-bottom: 5px;
+      font-style: italic;
+      font-size: larger;
+      color: rgb(0, 0, 0);
+      background-color: #fdae03af;
+      width: 7cm;
+      padding-bottom: 5px;
+      padding-left: 9px;
+      padding-top: 5px;
+      border-radius: 50px;
+    }
+    .services:hover{
+      color: #f4f4f9;
+      background-color: #333;
+      font-weight: bolder;
+    font-style: oblique;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+width: 7.5cm;
+    }
+
+    footer {
+      background-color: #212121;
+      color: white;
+      text-align: center;
+      padding: 50px;
+      font-size: 30px;
+      margin-top: 20%;
+    }
+    .blink {
+         
+            animation: blink 1s infinite; /* Blink effect */
+        }
+
+        /* Blinking animation */
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+      
+  </style>
+</head>
+<body>
+  <nav>
+    <div>
+    
+      
+      <a href="index.html">Get a Number Quickly</a>
+    </div>
+    <a href="end.html"><button>Log out</button> </a>
+
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Get the Number You Need, Right Now!</h1>
+    <p>Find contact numbers for ambulances, schools, markets, and more in Birtamode and Birtabazar.</p>
+    <marquee>Enter the service name you need  💬 (e.g., Ram, ambulance, Police.etc)</marquee>
+  </section>
+
+<div class="services">
+  <h3><mark>Our Services Include:</mark><br>
+    ✅ 1. Police <br>
+    ✅ 2. Ambulance <br>
+    ✅ 3. Hospital <br>
+    ✅ 4. Fire    <br>
+    ✅ 5. School <br>
+    ✅ 6. News media <br>
+    ✅ 7. Market <br>
+  </h3>
+</div>
+<div class="blink">
+  <center><h1>Please enter the service name without any spaces </h1></center>
+</div>
+  <!-- Service Finder -->
+  <div class="container">
+    <h1>Service Finder</h1>
+    <input type="text" id="userInput" placeholder="Enter service name (e.g., hospital,news,school,police,ambulance,etc..)">
+    <button onclick="findService()">Find Service</button>
+    <div id="messageBox" class="message-box" style="display: none;"></div>
+  </div>
+<br>
+  <!-- Emergency Button -->
+ <center> <h1>Birtamod Municipality contact no:<br>
+  <br> <mark> 023-597007</mark></h1></center>
+  <button class="emergency-btn" onclick="activateEmergency()">Emergency!</button>
+   <!-- Footer -->
+   <footer>
+    <p>&copy; 2024 Get a Number Quickly | All Rights Reserved</p>
+  </footer>
+  <script>
+    // Service data
+    const services = {
+      hospital: [
+        "B&C Medical College Teaching Hospital: +977-23-545777, +977-23-545566",
+        "Kankai Hospital Pvt. Ltd: +977-23-543807, +977-23-543818",
+        "Birtamode Eye Hospital: +977-23-540476, +977-23-546295",
+        "Birtamode Children Hospital: +977-9842299250",
+        "Mechi Dristi Eye Hospital: +977-23-545702"
+      ],
+      ambulance: [
+        "Nepal Red Cross Ambulance: +977-9815980500",
+        "Jhapa Ambulance Association: 9816054000, 9807976555, 9842789870",
+        "Laxmi Ambulance Service:  023-541644, 9852671999"
+      ],
+      police: [
+        "Traffic Police : 023-540299",
+        "Birtamode Police Station: 023-455100",
+        "Nepal Police District Office: 100"
+      ],
+      fire: [
+        "Fire Service Emergency: 101",
+        "Birtamode Fire Department: 9852640101",
+        "Mechinagar Fire Department: 023-562504"
+      ],
+      market: [
+        "Quality Computer:  986-3609150",
+        "One stop mall: 980-6032600",
+        "Birtamode City Center: 9802074553",
+        "Bhatbhateni Birtamode: 9801233853"
+      ],
+      school: [
+    "Takshashila: 023533211 ",
+    "bells model school: 023417150",
+    "Little Flowers' English School: 023540172",
+    "Balmiki Education Foundation: 023540195",
+      "Gomendra Multiple College : +977 023-540892 ",
+      " Kanchanjunga English Higher Secondary School: 023-542287"
+      ],
+      news: [
+        "Birtamode News BJ: 9842629472, 9842659690",
+        " News 24 Nepal: +977-01-4002666, +977-01-4446199",
+        "Kantipur Television: +977-01-5135050, 063, 068",
+        "The Himalayan Times: +977-14720162 ",
+      ]
+    };
+
+    // Function to find the service
+    function findService() {
+      const userInput = document.getElementById('userInput').value.toLowerCase();
+      const messageBox = document.getElementById('messageBox');
+
+      // Check if the service exists
+      if (services[userInput]) {
+        messageBox.style.display = 'block';
+        let output = `<span>Service:</span><br><ul>`;
+        services[userInput].forEach(service => {
+          // Highlight all numbers
+          service = service.replace(/(\d+)/g, '<span class="highlight-number">$1</span>');
+          output += `<li>${service}</li>`;
+        });
+        output += `</ul>`;
+        messageBox.innerHTML = output;
+      } else {
+        messageBox.style.display = 'block';
+        messageBox.innerHTML = `<span>Sorry:</span> We don't have the service for "${userInput}" right now.<br>
+        <span> OR:</span> Please enter the service name "${userInput}" without any spaces`;
+
+      }
+
+      // Clear the input field after submission
+      document.getElementById('userInput').value = '';
+    }
+
+    // Function to activate the emergency button effect
+    function activateEmergency() {
+      document.body.classList.toggle('emergency-active');
+    }
+  </script>
+  <script>
+    document.addEventListener("contextmenu", (event) => {
+      event.preventDefault();
+    });
+  </script>
+</body>
+</html>
